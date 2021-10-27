@@ -1,24 +1,31 @@
 {
-    "version": "0.0.0",
+    "name": "lovehq-frontend",
+    "version": "0.1.0",
+    "license": "WTFPL",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "serve": "vite preview"
+        "build2": "vue-tsc --noEmit && vite build",
+        "serve": "vite preview",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+        "format": "prettier .  --write"
     },
     "dependencies": {
-        "vue": "^3.0.5",
+        "axios": "^0.21.1",
+        "vue": "^3.2.1",
         "vue-meta": "^3.0.0-alpha.8",
         "vue-router": "4",
         "vuex": "^4.0.2"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^1.2.4",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-vue": "^7.13.0",
-        "prettier": "^2.3.2",
         "@vue/compiler-sfc": "^3.0.5",
         "autoprefixer": "^10.3.0",
+        "eslint": "^7.32.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-vue": "^7.16.0",
         "postcss": "^8.3.5",
+        "prettier": "^2.3.2",
         "tailwindcss": "^2.2.4",
         "vite": "^2.4.0"
     }
